@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Лучшие работники (Доход / Период)</h1>
+    </header>
+    <section class="filters">
+        <div class="date-picker">
+            <input type="text" id="dateRange" placeholder="Выберите период">
+        </div>
+        <div class="department-input">
+            <label for="departmentInput">ID департаментов:</label>
+            <input type="text" id="departmentInput" placeholder="Например, 204, 346, 156">
+        </div>
+        <button id="loadData" class="load-data-button">Показать</button>
+    </section>
+    <div id="loadingIndicator" class="loading-indicator">Загрузка...</div>
+    <main id="employee-dashboard" class="employee-dashboard"></main>
+    <script src="script.js"></script>
+</body>
+
+</html>
